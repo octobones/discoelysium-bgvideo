@@ -1,0 +1,149 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/*video de fundo*/
+#bg-video{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.overlay{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 30px 80px;
+}
+/*cabeçalho*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 150px;
+}
+nav{
+    display: flex;
+    gap: 40px;
+}
+nav a{
+    color: #44c295;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover{
+    color: white;
+    transition: 0.5s;
+}
+.redes{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    color: white;
+}
+.redes i{
+    cursor: pointer;
+}
+.redes i:hover{
+    color: #44c295;
+    transition: 0.5s;
+}
+/*area principal*/
+main{
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.texto{
+    width: 45%;
+}
+.texto h1{
+    color: white;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.texto p{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 80px;
+    line-height: 35px;
+}
+.botoes{
+    display: flex;
+    gap: 20px;
+}
+button{
+    padding: 15px 35px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn-laranja{
+    background-color: #bb5530;
+    color: white;
+}
+.btn-laranja:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid #bb5530;
+    transition: 0.5s;
+}
+.btn-verde{
+    background-color: transparent;
+    color: white;
+    border: 2px solid #535420;
+}
+.btn-verde:hover{
+    background-color: #535420;
+    color: white;
+    transition: 0.5s;
+}
+img{
+    width: 250px;
+}
+.habilidades{
+    height: 100vh;
+    background-color: rgb(10, 10, 10);
+    padding: 80px;
+}
+.cards{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: black;
+    color: white;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.card:hover{
+    transform: translateY(-10px);
+    transition: 2s;
+}
+.card img{
+    width: 100%;
+    height: 255px;
+    object-fit: cover;
+}
